@@ -70,7 +70,6 @@ const autoGrow = field => {
 }
 
 document.addEventListener('input', e => {
-          console.log(e.target.tagName.toLowerCase())
           if(e.target.tagName.toLowerCase() === 'textarea') {
                     return autoGrow(e.target)
           }
